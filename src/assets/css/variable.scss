@@ -1,0 +1,13 @@
+$theme-color: #e85164;
+$font-color: #333;
+
+//多行文字截断
+@mixin line-clamp($lines) {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: $lines; //显示的行数
+  /*! autoprefixer: off */
+  -webkit-box-orient: vertical;
+  /* autoprefixer: on */
+}
